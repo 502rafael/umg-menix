@@ -5,6 +5,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
+        "ext-gd": "*",
         "php": ">=7.0.0",
         "barryvdh/laravel-dompdf": "^0.8.3",
         "fideloper/proxy": "~3.3",
