@@ -119,7 +119,8 @@
             </div>
             <div id="datos">
                 <p id="encabezado">
-                    <b>Compartiendo Códigos</b><br>Arequipa, Perú<br>Telefono:(+51)999999999<br>Email: compartiendocodigos@gmail.com
+                    <b>Libreria Menix</b>
+                    {{-- <b>Libreria Menix</b><br>Arequipa, Perú<br>Telefono:(+51)999999999<br>Email: compartiendocodigos@gmail.com --}}
                 </p>
             </div>
             <div id="fact">

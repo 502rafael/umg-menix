@@ -82,7 +82,7 @@
 </head>
 <body>
     <div>
-        <h3>Lista de Artículos <span class="derecha">{{now()}}</span></h3>
+        <h3>Lista de Productos <span class="derecha">{{now()}}</span></h3>
     </div>
     <div>
         <table class="table table-bordered table-striped table-sm">

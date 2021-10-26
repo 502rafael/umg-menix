@@ -17,7 +17,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <select class="form-control col-md-3" v-model="criterio">
-                                      <option value="tipo_comprobante">Tipo Comprobante</option>
+                                      <option value="tipo_comprobante">Tipo Comprobante  o Factura</option>
                                       <option value="num_comprobante">Número Comprobante</option>
                                       <option value="fecha_hora">Fecha-Hora</option>
                                     </select>
@@ -33,9 +33,9 @@
                                         <th>Opciones</th>
                                         <th>Usuario</th>
                                         <th>Cliente</th>
-                                        <th>Tipo Comprobante</th>
+                                        <!-- <th>Tipo Comprobante</th>
                                         <th>Serie Comprobante</th>
-                                        <th>Número Comprobante</th>
+                                        <th>Número Comprobante</th> -->
                                         <th>Fecha Hora</th>
                                         <th>Total</th>
                                         <th>Impuesto</th>
@@ -54,9 +54,9 @@
                                         </td>
                                         <td v-text="venta.usuario"></td>
                                         <td v-text="venta.nombre"></td>
-                                        <td v-text="venta.tipo_comprobante"></td>
-                                        <td v-text="venta.serie_comprobante"></td>
-                                        <td v-text="venta.num_comprobante"></td>
+                                        <!-- <td v-text="venta.tipo_comprobante"></td> -->
+                                        <!-- <td v-text="venta.serie_comprobante"></td> -->
+                                        <!-- <td v-text="venta.num_comprobante"></td> -->
                                         <td v-text="venta.fecha_hora"></td>
                                         <td v-text="venta.total"></td>
                                         <td v-text="venta.impuesto"></td>

@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Sistema Ventas Laravel Vue Js- compartiendocodigos">
-  <meta name="author" content="compartiendocodigos.net">
-  <meta name="keyword" content="Sistema ventas Laravel Vue Js, Sistema compras Laravel Vue Js">
+  {{-- <meta name="description" content="Sistema Ventas Laravel Vue Js- compartiendocodigos">
+  <meta name="author" content="compartiendocodigos.net"> --}}
+  {{-- <meta name="keyword" content="Sistema ventas Laravel Vue Js, Sistema compras Laravel Vue Js"> --}}
 
-  <title>Sistema Ventas - Compartiendo Códigos</title>
+  <title>Libreria y Variedades Menix</title>
 
   <link href="css/plantilla.css" rel="stylesheet">
 
