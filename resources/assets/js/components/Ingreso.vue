@@ -36,9 +36,9 @@
                                         <th>Opciones</th>
                                         <th>Usuario</th>
                                         <th>Proveedor</th>
-                                        <th>Tipo Comprobante</th>
+                                        <!-- <th>Tipo Comprobante</th>
                                         <th>Serie Comprobante</th>
-                                        <th>Número Comprobante</th>
+                                        <th>Número Comprobante</th> -->
                                         <th>Fecha Hora</th>
                                         <th>Total</th>
                                         <th>Impuesto</th>
@@ -202,15 +202,15 @@
                                             </td>
                                         <tr style="background-color: #CEECF5;">
                                             <td colspan="4" align="right"><strong>Total Parcial:</strong></td>
-                                            <td>$ {{totalParcial=(total-totalImpuesto).toFixed(2)}}</td>
+                                            <td>Q {{totalParcial=(total-totalImpuesto).toFixed(2)}}</td>
                                         </tr>
                                         <tr style="background-color: #CEECF5;">
                                             <td colspan="4" align="right"><strong>Total Impuesto:</strong></td>
-                                            <td>$ {{totalImpuesto=((total*impuesto)/(1+impuesto)).toFixed(2)}}</td>
+                                            <td>Q {{totalImpuesto=((total*impuesto)/(1+impuesto)).toFixed(2)}}</td>
                                         </tr>
                                         <tr style="background-color: #CEECF5;">
                                             <td colspan="4" align="right"><strong>Total Neto:</strong></td>
-                                            <td>$ {{total=calcularTotal}}</td>
+                                            <td>Q {{total=calcularTotal}}</td>
                                         </tr>
                                     </tbody>  
                                     <tbody v-else>
@@ -289,15 +289,15 @@
                                             </td>
                                         <tr style="background-color: #CEECF5;">
                                             <td colspan="3" align="right"><strong>Total Parcial:</strong></td>
-                                            <td>$ {{totalParcial=(total-totalImpuesto).toFixed(2)}}</td>
+                                            <td>Q {{totalParcial=(total-totalImpuesto).toFixed(2)}}</td>
                                         </tr>
                                         <tr style="background-color: #CEECF5;">
                                             <td colspan="3" align="right"><strong>Total Impuesto:</strong></td>
-                                            <td>$ {{totalImpuesto=(total*impuesto).toFixed(2)}}</td>
+                                            <td>Q {{totalImpuesto=(total*impuesto).toFixed(2)}}</td>
                                         </tr>
                                         <tr style="background-color: #CEECF5;">
                                             <td colspan="3" align="right"><strong>Total Neto:</strong></td>
-                                            <td>$ {{total}}</td>
+                                            <td>Q {{total}}</td>
                                         </tr>
                                     </tbody>  
                                     <tbody v-else>

@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <p>Ventas de los últimos meses.</p>
+                                <p>VENTAS DE ESTOS MESES.</p>
                             </div>
                         </div>
                     </div>
