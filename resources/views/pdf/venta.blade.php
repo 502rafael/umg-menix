@@ -140,7 +140,6 @@
                     <tbody>
                         <tr>
                             <th><p id="cliente">Sr(a). {{$v->nombre}}<br>
-                            {{$v->tipo_documento}}: {{$v->num_documento}}<br>
                             Dirección: {{$v->direccion}}<br>
                             Teléfono: {{$v->telefono}}<br>
                             Email: {{$v->email}}</</p></th>
@@ -178,18 +177,17 @@
                             <th>CANT</th>
                             <th>DESCRIPCION</th>
                             <th>PRECIO UNIT</th>
-                            <th>DESC.</th>
-                            <th>PRECIO TOTAL</th>
+                            <th>SUB TOTAL</th>
+                            <th>TOTAL</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($detalles as $det)
                         <tr>
-                            <td>{{$det->cantidad}}</td>
-                            <td>{{$det->articulo}}</td>
-                            <td>{{$det->precio}}</td>
-                            <td>{{$det->descuento}}</td>
-                            <td>{{$det->cantidad*$det->precio-$det->descuento}}</td>
+                            <th>{{$det->cantidad}}</th>
+                            <th>{{$det->articulo}}</th>
+                            <th>Q.{{$det->precio}}</th>
+                            <th>Q.{{$det->cantidad*$det->precio-$det->descuento}}</th>
                         </tr>
                         @endforeach
                     </tbody>
@@ -199,22 +197,10 @@
                             <th></th>
                             <th></th>
                             <th></th>
-                            <th>SUBTOTAL</th>
-                            <td>$ {{round($v->total-($v->total*$v->impuesto),2)}}</td>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th>Impuesto</th>
-                            <td>$ {{round($v->total*$v->impuesto,2)}}</td>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th>TOTAL</th>
-                            <td>$ {{$v->total}}</td>
+                            <hr>
+                            <br>
+                            <th> <br> TOTAL</th>
+                            <th> <br> Q.{{$v->total}}</th>
                         </tr>
                         @endforeach
                     </tfoot>

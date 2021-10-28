@@ -30,7 +30,7 @@
                             </div>
                         </div>
                         <div class="table-responsive">
-                            <table class="table table-bordered table-striped table-sm">
+                            <table class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th>Opciones</th>
@@ -58,6 +58,10 @@
                                         <td v-text="venta.usuario"></td>
                                         <td v-text="venta.nombre"></td>
                                         <td v-text="venta.total"></td>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7391a4c9143dbe9a46988dda5d4594682e7af949
                                         <td v-text="venta.estado"></td>
                                     </tr>                                
                                 </tbody>
@@ -97,7 +101,10 @@
                                     </v-select>
                                 </div>
                             </div>
+<<<<<<< HEAD
                            
+=======
+>>>>>>> 7391a4c9143dbe9a46988dda5d4594682e7af949
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Tipo Comprobante(*)</label>
@@ -122,11 +129,45 @@
                                     </div>                                    
                                 </div>
                             </div>
+<<<<<<< HEAD
                             
+=======
+
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>Precio <span style="color: red;" v-show="precio==0"></span></label>
+                                    <input type="number" value="0" step="any" class="form-control" v-model="precio">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>Cantidad <span style="color: red;" v-show="cantidad==0"></span></label>
+                                    <input type="number" value="0" class="form-control" v-model="cantidad">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <button @click="agregarDetalle()" class="btn btn-success form-control btnagregar"><i class="icon-plus"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+
+                            </div>
+                            <div class="col-md-2">
+
+                            </div>
+                            <div class="col-md-2">
+
+                            </div>
+                            <div class="col-md-2">
+
+                            </div>
+>>>>>>> 7391a4c9143dbe9a46988dda5d4594682e7af949
                         </div>
                         <div class="form-group row border">
                             <div class="table-responsive col-md-12">
-                                <table class="table table-bordered table-striped table-sm">
+                                <table class="table table-striped">
                                     <thead>
                                         <tr>
                                             <th>Opciones</th>
@@ -153,6 +194,7 @@
                                                 <input v-model="detalle.cantidad" type="number"  class="form-control">
                                             </td>
                                             <td>
+<<<<<<< HEAD
                                                  <span style="color:red;" v-show="detalle.descuento>(detalle.precio*detalle.cantidad)">Descuento superior</span>
                                                 <input v-model="detalle.descuento" type="number"  class="form-control">
                                             </td>
@@ -168,6 +210,14 @@
                                         <tr style="background-color: #CEECF5;">
                                             <td colspan="5" align="right"><strong>Total Neto:</strong></td>
                                             <td>Q {{total=calcularTotal}}</td>
+=======
+                                                {{detalle.precio*detalle.cantidad-detalle.descuento}}
+                                            </td>
+                                            
+                                        <tr style="background-color: #CEECF5;">
+                                            <td colspan="5" align="right"><strong>Total:</strong></td>
+                                            <td>Q.{{total=calcularTotal}}</td>
+>>>>>>> 7391a4c9143dbe9a46988dda5d4594682e7af949
                                         </tr>
                                     </tbody>  
                                     <tbody v-else>
@@ -200,11 +250,34 @@
                                     <p v-text="cliente"></p>
                                 </div>
                             </div>
+<<<<<<< HEAD
             
+=======
+
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Tipo Comprobante</label>
+                                    <p v-text="tipo_comprobante"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Serie Comprobante</label>
+                                    <p v-text="serie_comprobante"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Número Comprobante</label>
+                                    <p v-text="num_comprobante"></p>
+                                </div>
+                            </div>
+>>>>>>> 7391a4c9143dbe9a46988dda5d4594682e7af949
                         </div>
                         <div class="form-group row border">
                             <div class="table-responsive col-md-12">
-                                <table class="table table-bordered table-striped table-sm">
+                                <table class="table table-striped">
                                     <thead>
                                         <tr>
                                             <th>Artículo</th>
@@ -284,7 +357,7 @@
                             </div>
                         </div>
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-sm">
+                                <table class="table table-striped">
                                  <thead>
                                  <tr>
                                     <th>Opciones</th>
