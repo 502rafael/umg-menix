@@ -10,7 +10,7 @@
                     <div class="card-header">
                         <i class="fa fa-align-justify"></i> Proveedores
                         <button type="button" @click="abrirModal('persona','registrar')" class="btn btn-success">
-                            <i class="icon-plus"></i>&nbsp;Nuevo
+                            <i class="icon-plus"></i>&nbsp;Nuevo Proveedor
                         </button>
                     </div>
                     <div class="card-body">

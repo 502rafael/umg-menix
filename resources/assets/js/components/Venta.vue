@@ -10,7 +10,7 @@
                     <div class="card-header">
                         <i class="fa fa-align-justify"></i> Ventas
                         <button type="button" @click="mostrarDetalle()" class="btn btn-success">
-                            <i class="icon-plus"></i>&nbsp;Nuevo
+                            <i class="icon-plus"></i>&nbsp;Nueva Venta
                         </button>
                     </div>
                     <!-- Listado-->

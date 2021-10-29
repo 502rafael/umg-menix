@@ -10,7 +10,7 @@
                     <div class="card-header">
                         <i class="fa fa-align-justify"></i> Clientes
                         <button type="button" @click="abrirModal('persona','registrar')" class="btn btn-success">
-                            <i class="icon-plus"></i>&nbsp;Nuevo
+                            <i class="icon-plus"></i>&nbsp;Nuevo Cliente
                         </button>
                     </div>
                     <div class="card-body">

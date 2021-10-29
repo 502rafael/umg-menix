@@ -10,7 +10,7 @@
                     <div class="card-header">
                         <i class="fa fa-align-justify"></i> Usuarios
                         <button type="button" @click="abrirModal('persona','registrar')" class="btn btn-secondary">
-                            <i class="icon-plus"></i>&nbsp;Nuevo
+                            <i class="icon-plus"></i>&nbsp;Nuevo Usuario
                         </button>
                     </div>
                     <div class="card-body">

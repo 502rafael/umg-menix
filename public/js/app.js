@@ -54510,7 +54510,7 @@ var render = function() {
           _c(
             "button",
             {
-              staticClass: "btn btn-secondary",
+              staticClass: "btn btn-success",
               attrs: { type: "button" },
               on: {
                 click: function($event) {
@@ -54520,7 +54520,7 @@ var render = function() {
             },
             [
               _c("i", { staticClass: "icon-plus" }),
-              _vm._v(" Nuevo\n                ")
+              _vm._v(" Nueva Categoría\n                ")
             ]
           )
         ]),
@@ -54956,7 +54956,7 @@ var render = function() {
                 _c(
                   "button",
                   {
-                    staticClass: "btn btn-secondary",
+                    staticClass: "btn btn-danger",
                     attrs: { type: "button" },
                     on: {
                       click: function($event) {
@@ -58458,7 +58458,7 @@ var render = function() {
       _c("div", { staticClass: "card" }, [
         _c("div", { staticClass: "card-header" }, [
           _c("i", { staticClass: "fa fa-align-justify" }),
-          _vm._v(" Producto \n                "),
+          _vm._v(" Productos \n                "),
           _c(
             "button",
             {
@@ -58472,7 +58472,7 @@ var render = function() {
             },
             [
               _c("i", { staticClass: "icon-plus" }),
-              _vm._v(" Nuevo\n                ")
+              _vm._v(" Nuevo Producto\n                ")
             ]
           ),
           _vm._v(" "),
@@ -60064,7 +60064,7 @@ var render = function() {
               },
               [
                 _c("i", { staticClass: "icon-plus" }),
-                _vm._v(" Nuevo\n                ")
+                _vm._v(" Nuevo Ingreso\n                ")
               ]
             )
           ]),
@@ -61936,7 +61936,7 @@ var render = function() {
             },
             [
               _c("i", { staticClass: "icon-plus" }),
-              _vm._v(" Nuevo\n                ")
+              _vm._v(" Nuevo Cliente\n                ")
             ]
           )
         ]),
@@ -63086,7 +63086,7 @@ var render = function() {
             },
             [
               _c("i", { staticClass: "icon-plus" }),
-              _vm._v(" Nuevo\n                ")
+              _vm._v(" Nuevo Proveedor\n                ")
             ]
           )
         ]),
@@ -64935,7 +64935,7 @@ var render = function() {
             },
             [
               _c("i", { staticClass: "icon-plus" }),
-              _vm._v(" Nuevo\n                ")
+              _vm._v(" Nuevo Usuario\n                ")
             ]
           )
         ]),
@@ -66684,7 +66684,7 @@ var render = function() {
               },
               [
                 _c("i", { staticClass: "icon-plus" }),
-                _vm._v(" Nuevo\n                ")
+                _vm._v(" Nueva Venta\n                ")
               ]
             )
           ]),

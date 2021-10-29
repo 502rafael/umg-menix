@@ -8,9 +8,9 @@
                 <!-- Ejemplo de tabla Listado -->
                 <div class="card">
                     <div class="card-header">
-                        <i class="fa fa-align-justify"></i> Producto 
+                        <i class="fa fa-align-justify"></i> Productos 
                         <button type="button" @click="abrirModal('articulo','registrar')" class="btn btn-success">
-                            <i class="icon-plus"></i>&nbsp;Nuevo
+                            <i class="icon-plus"></i>&nbsp;Nuevo Producto
                         </button>
                          <button type="button" @click="cargarPdf()" class="btn btn-primary">
                             <i class="icon-doc"></i>&nbsp;Reporte

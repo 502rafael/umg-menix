@@ -9,8 +9,8 @@
                 <div class="card">
                     <div class="card-header">
                         <i class="fa fa-align-justify"></i> Categorías
-                        <button type="button" @click="abrirModal('categoria','registrar')" class="btn btn-secondary">
-                            <i class="icon-plus"></i>&nbsp;Nuevo
+                        <button type="button" @click="abrirModal('categoria','registrar')" class="btn btn-success">
+                            <i class="icon-plus"></i>&nbsp;Nueva Categoría
                         </button>
                     </div>
                     <div class="card-body">
@@ -119,7 +119,7 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" @click="cerrarModal()">Cerrar</button>
+                            <button type="button" class="btn btn-danger" @click="cerrarModal()">Cerrar</button>
                             <button type="button" v-if="tipoAccion==1" class="btn btn-primary" @click="registrarCategoria()">Guardar</button>
                             <button type="button" v-if="tipoAccion==2" class="btn btn-primary" @click="actualizarCategoria()">Actualizar</button>
                         </div>
