@@ -62308,8 +62308,8 @@ var render = function() {
                             }
                           },
                           [
-                            _c("option", { attrs: { value: "DPI" } }, [
-                              _vm._v("DPI")
+                            _c("option", { attrs: { value: "NIT" } }, [
+                              _vm._v("NIT")
                             ]),
                             _vm._v(" "),
                             _c("option", { attrs: { value: "RUC" } }, [
