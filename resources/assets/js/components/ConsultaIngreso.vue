@@ -8,7 +8,7 @@
                 <!-- Ejemplo de tabla Listado -->
                 <div class="card">
                     <div class="card-header">
-                        <i class="fa fa-align-justify"></i> Ingresos
+                        <i class="fa fa-align-justify"></i> Reportes Ingresos
                     </div>
                     <!-- Listado-->
                     <template v-if="listado==1">
@@ -129,7 +129,7 @@
                                             </td>
                                         <tr style="background-color: #CEECF5;">
                                             <td colspan="3" align="right"><strong>Total :</strong></td>
-                                            <td>$ {{total}}</td>
+                                            <td>Q {{total}}</td>
                                         </tr>
                                     </tbody>  
                                     <tbody v-else>

@@ -69231,7 +69231,7 @@ var render = function() {
                                       _vm._m(4),
                                       _vm._v(" "),
                                       _c("td", [
-                                        _vm._v("$ " + _vm._s(_vm.total))
+                                        _vm._v("Q " + _vm._s(_vm.total))
                                       ])
                                     ]
                                   )
@@ -69286,7 +69286,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fa fa-align-justify" }),
-      _vm._v(" Ingresos\n            ")
+      _vm._v(" Reportes Ingresos\n            ")
     ])
   },
   function() {
@@ -70250,7 +70250,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("i", { staticClass: "fa fa-align-justify" }),
-      _vm._v(" Ventas\n            ")
+      _vm._v(" Reportes Ventas\n            ")
     ])
   },
   function() {

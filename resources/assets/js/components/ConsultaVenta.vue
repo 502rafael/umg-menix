@@ -8,7 +8,7 @@
                 <!-- Ejemplo de tabla Listado -->
                 <div class="card">
                     <div class="card-header">
-                        <i class="fa fa-align-justify"></i> Ventas
+                        <i class="fa fa-align-justify"></i> Reportes Ventas
                     </div>
                     <!-- Listado-->
                     <template v-if="listado==1">
