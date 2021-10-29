@@ -97,7 +97,7 @@
                                     <label class="col-md-3 form-control-label" for="text-input">Tipo Documento</label>
                                     <div class="col-md-9">
                                         <select v-model="tipo_documento" class="form-control">
-                                            <option value="DNI">DNI</option>
+                                            <option value="DNI">DPI</option>
                                             <option value="RUC">RUC</option>
                                             <option value="PASS">PASS</option>
                                         </select>                                    
@@ -151,7 +151,7 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-dager" @click="cerrarModal()">Cerrar</button>
+                            <button type="button" class="btn btn-danger" @click="cerrarModal()">Cerrar</button>
                             <button type="button" v-if="tipoAccion==1" class="btn btn-primary" @click="registrarPersona()">Guardar</button>
                             <button type="button" v-if="tipoAccion==2" class="btn btn-primary" @click="actualizarPersona()">Actualizar</button>
                         </div>

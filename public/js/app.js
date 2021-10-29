@@ -63465,7 +63465,7 @@ var render = function() {
                           },
                           [
                             _c("option", { attrs: { value: "DNI" } }, [
-                              _vm._v("DNI")
+                              _vm._v("DPI")
                             ]),
                             _vm._v(" "),
                             _c("option", { attrs: { value: "RUC" } }, [
@@ -63733,7 +63733,7 @@ var render = function() {
                 _c(
                   "button",
                   {
-                    staticClass: "btn btn-dager",
+                    staticClass: "btn btn-danger",
                     attrs: { type: "button" },
                     on: {
                       click: function($event) {
@@ -64925,7 +64925,7 @@ var render = function() {
           _c(
             "button",
             {
-              staticClass: "btn btn-secondary",
+              staticClass: "btn btn-success",
               attrs: { type: "button" },
               on: {
                 click: function($event) {
@@ -65685,7 +65685,7 @@ var render = function() {
                 _c(
                   "button",
                   {
-                    staticClass: "btn btn-secondary",
+                    staticClass: "btn btn-danger",
                     attrs: { type: "button" },
                     on: {
                       click: function($event) {
@@ -69622,22 +69622,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -69981,16 +69965,30 @@ var render = function() {
                             _vm._v(" "),
                             _c("td", {
                               domProps: {
+                                textContent: _vm._s(venta.tipo_comprobante)
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("td", {
+                              domProps: {
+                                textContent: _vm._s(venta.serie_comprobante)
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("td", {
+                              domProps: {
+                                textContent: _vm._s(venta.num_comprobante)
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("td", {
+                              domProps: {
                                 textContent: _vm._s(venta.fecha_hora)
                               }
                             }),
                             _vm._v(" "),
                             _c("td", {
                               domProps: { textContent: _vm._s(venta.total) }
-                            }),
-                            _vm._v(" "),
-                            _c("td", {
-                              domProps: { textContent: _vm._s(venta.impuesto) }
                             }),
                             _vm._v(" "),
                             _c("td", {
@@ -70102,16 +70100,6 @@ var render = function() {
                         ])
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "col-md-3" }, [
-                        _c("label", { attrs: { for: "" } }, [
-                          _vm._v("Impuesto")
-                        ]),
-                        _vm._v(" "),
-                        _c("p", {
-                          domProps: { textContent: _vm._s(_vm.impuesto) }
-                        })
-                      ]),
-                      _vm._v(" "),
                       _c("div", { staticClass: "col-md-4" }, [
                         _c("div", { staticClass: "form-group" }, [
                           _c("label", [_vm._v("Tipo Comprobante")]),
@@ -70178,12 +70166,6 @@ var render = function() {
                                         }
                                       }),
                                       _vm._v(" "),
-                                      _c("td", {
-                                        domProps: {
-                                          textContent: _vm._s(detalle.descuento)
-                                        }
-                                      }),
-                                      _vm._v(" "),
                                       _c("td", [
                                         _vm._v(
                                           "\n                                        " +
@@ -70197,6 +70179,11 @@ var render = function() {
                                       ])
                                     ])
                                   }),
+                                  _c("tr", {
+                                    staticStyle: {
+                                      "background-color": "#CEECF5"
+                                    }
+                                  }),
                                   _c(
                                     "tr",
                                     {
@@ -70208,52 +70195,6 @@ var render = function() {
                                       _vm._m(4),
                                       _vm._v(" "),
                                       _c("td", [
-                                        _vm._v(
-                                          "Q " +
-                                            _vm._s(
-                                              (_vm.totalParcial = (
-                                                _vm.total - _vm.totalImpuesto
-                                              ).toFixed(2))
-                                            )
-                                        )
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "tr",
-                                    {
-                                      staticStyle: {
-                                        "background-color": "#CEECF5"
-                                      }
-                                    },
-                                    [
-                                      _vm._m(5),
-                                      _vm._v(" "),
-                                      _c("td", [
-                                        _vm._v(
-                                          "Q " +
-                                            _vm._s(
-                                              (_vm.totalImpuesto = (
-                                                _vm.total * _vm.impuesto
-                                              ).toFixed(2))
-                                            )
-                                        )
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "tr",
-                                    {
-                                      staticStyle: {
-                                        "background-color": "#CEECF5"
-                                      }
-                                    },
-                                    [
-                                      _vm._m(6),
-                                      _vm._v(" "),
-                                      _c("td", [
                                         _vm._v("Q " + _vm._s(_vm.total))
                                       ])
                                     ]
@@ -70261,7 +70202,7 @@ var render = function() {
                                 ],
                                 2
                               )
-                            : _c("tbody", [_vm._m(7)])
+                            : _c("tbody", [_vm._m(5)])
                         ])
                       ])
                     ]),
@@ -70324,11 +70265,15 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", [_vm._v("Cliente")]),
         _vm._v(" "),
+        _c("th", [_vm._v("Tipo Comprobante")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Serie Comprobante")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Número Comprobante")]),
+        _vm._v(" "),
         _c("th", [_vm._v("Fecha Hora")]),
         _vm._v(" "),
         _c("th", [_vm._v("Total")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Impuesto")]),
         _vm._v(" "),
         _c("th", [_vm._v("Estado")])
       ])
@@ -70346,8 +70291,6 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", [_vm._v("Cantidad")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Descuento")]),
-        _vm._v(" "),
         _c("th", [_vm._v("Subtotal")])
       ])
     ])
@@ -70356,24 +70299,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("td", { attrs: { colspan: "4", align: "right" } }, [
-      _c("strong", [_vm._v("Total Parcial:")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", { attrs: { colspan: "4", align: "right" } }, [
-      _c("strong", [_vm._v("Total Impuesto:")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", { attrs: { colspan: "4", align: "right" } }, [
-      _c("strong", [_vm._v("Total Neto:")])
+    return _c("td", { attrs: { colspan: "3", align: "right" } }, [
+      _c("strong", [_vm._v("Total:")])
     ])
   },
   function() {

@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-header">
                         <i class="fa fa-align-justify"></i> Usuarios
-                        <button type="button" @click="abrirModal('persona','registrar')" class="btn btn-secondary">
+                        <button type="button" @click="abrirModal('persona','registrar')" class="btn btn-success">
                             <i class="icon-plus"></i>&nbsp;Nuevo Usuario
                         </button>
                     </div>
@@ -172,7 +172,7 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" @click="cerrarModal()">Cerrar</button>
+                            <button type="button" class="btn btn-danger" @click="cerrarModal()">Cerrar</button>
                             <button type="button" v-if="tipoAccion==1" class="btn btn-primary" @click="registrarPersona()">Guardar</button>
                             <button type="button" v-if="tipoAccion==2" class="btn btn-primary" @click="actualizarPersona()">Actualizar</button>
                         </div>
