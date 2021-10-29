@@ -62309,7 +62309,7 @@ var render = function() {
                           },
                           [
                             _c("option", { attrs: { value: "DNI" } }, [
-                              _vm._v("DNI")
+                              _vm._v("DPI")
                             ]),
                             _vm._v(" "),
                             _c("option", { attrs: { value: "RUC" } }, [
