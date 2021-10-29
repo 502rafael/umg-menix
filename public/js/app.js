@@ -62308,7 +62308,7 @@ var render = function() {
                             }
                           },
                           [
-                            _c("option", { attrs: { value: "DNI" } }, [
+                            _c("option", { attrs: { value: "DPI" } }, [
                               _vm._v("DPI")
                             ]),
                             _vm._v(" "),
