@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-header">
                         <i class="fa fa-align-justify"></i> Ingresos
-                        <button type="button" @click="mostrarDetalle()" class="btn btn-secondary">
+                        <button type="button" @click="mostrarDetalle()" class="btn btn-success">
                             <i class="icon-plus"></i>&nbsp;Nuevo
                         </button>
                     </div>
@@ -30,18 +30,17 @@
                             </div>
                         </div>
                         <div class="table-responsive">
-                            <table class="table table-bordered table-striped table-sm">
+                            <table class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th>Opciones</th>
                                         <th>Usuario</th>
                                         <th>Proveedor</th>
-                                        <!-- <th>Tipo Comprobante</th>
+                                        <th>Tipo Comprobante</th>
                                         <th>Serie Comprobante</th>
-                                        <th>Número Comprobante</th> -->
+                                        <th>Número Comprobante</th> 
                                         <th>Fecha Hora</th>
                                         <th>Total</th>
-                                        <th>Impuesto</th>
                                         <th>Estado</th>
                                     </tr>
                                 </thead>
@@ -64,7 +63,6 @@
                                         <td v-text="ingreso.num_comprobante"></td>
                                         <td v-text="ingreso.fecha_hora"></td>
                                         <td v-text="ingreso.total"></td>
-                                        <td v-text="ingreso.impuesto"></td>
                                         <td v-text="ingreso.estado"></td>
                                     </tr>                                
                                 </tbody>
@@ -104,10 +102,6 @@
                                     </v-select>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <label for="">Impuesto(*)</label>
-                                <input type="text" class="form-control" v-model="impuesto">
-                            </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Tipo Comprobante(*)</label>
@@ -142,9 +136,9 @@
                             </div>
                         </div>
                         <div class="form-group row border">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <label>Artículo <span style="color: red;" v-show="idarticulo==0">(*Seleccione Articulo)</span></label>
+                                    <label>Artículo <span style="color: red;" v-show="idarticulo==0">(*)</span></label>
                                     <div class="form-inline">
                                         <input type="text" class="form-control" v-model="codigo" @keyup.enter="buscarArticulo()" placeholder="Ingrese artículo">
                                         <button @click="abrirModal()" class="btn btn-primary">...</button>
@@ -154,13 +148,13 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label>Precio <span style="color: red;" v-show="precio==0">(*Ingrese Precio)</span></label>
+                                    <label>Precio <span style="color: red;" v-show="precio==0">(*)</span></label>
                                     <input type="number" value="0" step="any" class="form-control" v-model="precio">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label>Cantidad <span style="color: red;" v-show="cantidad==0">(*Ingrese Cantidad)</span></label>
+                                    <label>Cantidad <span style="color: red;" v-show="cantidad==0">(*)</span></label>
                                     <input type="number" value="0" class="form-control" v-model="cantidad">
                                 </div>
                             </div>
@@ -172,7 +166,7 @@
                         </div>
                         <div class="form-group row border">
                             <div class="table-responsive col-md-12">
-                                <table class="table table-bordered table-striped table-sm">
+                                <table class="table table-striped">
                                     <thead>
                                         <tr>
                                             <th>Opciones</th>
@@ -200,16 +194,9 @@
                                             <td>
                                                 {{detalle.precio*detalle.cantidad}}
                                             </td>
+
                                         <tr style="background-color: #CEECF5;">
-                                            <td colspan="4" align="right"><strong>Total Parcial:</strong></td>
-                                            <td>Q {{totalParcial=(total-totalImpuesto).toFixed(2)}}</td>
-                                        </tr>
-                                        <tr style="background-color: #CEECF5;">
-                                            <td colspan="4" align="right"><strong>Total Impuesto:</strong></td>
-                                            <td>Q {{totalImpuesto=((total*impuesto)/(1+impuesto)).toFixed(2)}}</td>
-                                        </tr>
-                                        <tr style="background-color: #CEECF5;">
-                                            <td colspan="4" align="right"><strong>Total Neto:</strong></td>
+                                            <td colspan="4" align="right"><strong>Total:</strong></td>
                                             <td>Q {{total=calcularTotal}}</td>
                                         </tr>
                                     </tbody>  
@@ -225,7 +212,7 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <button type="button" @click="ocultarDetalle()" class="btn btn-secondary">Cerrar</button>
+                                <button type="button" @click="ocultarDetalle()" class="btn btn-danger">Cerrar</button>
                                 <button type="button" class="btn btn-primary" @click="registrarIngreso()">Registrar Compra</button>
                             </div>
                         </div>
@@ -241,10 +228,6 @@
                                     <label for="">Proveedor</label>
                                     <p v-text="proveedor"></p>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <label for="">Impuesto</label>
-                                <p v-text="impuesto"></p>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
@@ -267,7 +250,7 @@
                         </div>
                         <div class="form-group row border">
                             <div class="table-responsive col-md-12">
-                                <table class="table table-bordered table-striped table-sm">
+                                <table class="table table-striped">
                                     <thead>
                                         <tr>
                                             <th>Artículo</th>
@@ -288,15 +271,7 @@
                                                 {{detalle.precio*detalle.cantidad}}
                                             </td>
                                         <tr style="background-color: #CEECF5;">
-                                            <td colspan="3" align="right"><strong>Total Parcial:</strong></td>
-                                            <td>Q {{totalParcial=(total-totalImpuesto).toFixed(2)}}</td>
-                                        </tr>
-                                        <tr style="background-color: #CEECF5;">
-                                            <td colspan="3" align="right"><strong>Total Impuesto:</strong></td>
-                                            <td>Q {{totalImpuesto=(total*impuesto).toFixed(2)}}</td>
-                                        </tr>
-                                        <tr style="background-color: #CEECF5;">
-                                            <td colspan="3" align="right"><strong>Total Neto:</strong></td>
+                                            <td colspan="3" align="right"><strong>Total:</strong></td>
                                             <td>Q {{total}}</td>
                                         </tr>
                                     </tbody>  
@@ -312,7 +287,7 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <button type="button" @click="ocultarDetalle()" class="btn btn-secondary">Cerrar</button>
+                                <button type="button" @click="ocultarDetalle()" class="btn btn-danger">Cerrar</button>
                             </div>
                         </div>
                     </div>
@@ -346,7 +321,7 @@
                             </div>
                         </div>
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-sm">
+                                <table class="table table-striped">
                                  <thead>
                                  <tr>
                                     <th>Opciones</th>
@@ -385,7 +360,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" @click="cerrarModal()">Cerrar</button>
+                            <button type="button" class="btn btn-danger" @click="cerrarModal()">Cerrar</button>
                             <button type="button" v-if="tipoAccion==1" class="btn btn-primary" @click="registrarPersona()">Guardar</button>
                             <button type="button" v-if="tipoAccion==2" class="btn btn-primary" @click="actualizarPersona()">Actualizar</button>
                         </div>

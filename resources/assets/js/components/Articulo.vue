@@ -8,11 +8,11 @@
                 <!-- Ejemplo de tabla Listado -->
                 <div class="card">
                     <div class="card-header">
-                        <i class="fa fa-align-justify">Producto</i> 
-                        <button type="button" @click="abrirModal('articulo','registrar')" class="btn btn-secondary">
+                        <i class="fa fa-align-justify"></i> Producto 
+                        <button type="button" @click="abrirModal('articulo','registrar')" class="btn btn-success">
                             <i class="icon-plus"></i>&nbsp;Nuevo
                         </button>
-                         <button type="button" @click="cargarPdf()" class="btn btn-info">
+                         <button type="button" @click="cargarPdf()" class="btn btn-primary">
                             <i class="icon-doc"></i>&nbsp;Reporte
                         </button>
                     </div>
@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                         </div>
-                        <table class="table table-bordered table-striped table-sm">
+                        <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>Opciones</th>
@@ -118,10 +118,7 @@
                                 <div class="form-group row">
                                     <label class="col-md-3 form-control-label" for="text-input">Código</label>
                                     <div class="col-md-9">
-                                        <input type="text" v-model="codigo" class="form-control" placeholder="Código de barras"> 
-                                        <barcode :value="codigo" :options="{ format: 'EAN-13' }">
-                                            Generando código de barras.    
-                                        </barcode>                                       
+                                        <input type="text" v-model="codigo" class="form-control" placeholder="Código de barras">                                     
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -159,7 +156,7 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" @click="cerrarModal()">Cerrar</button>
+                            <button type="button" class="btn btn-danger" @click="cerrarModal()">Cerrar</button>
                             <button type="button" v-if="tipoAccion==1" class="btn btn-primary" @click="registrarArticulo()">Guardar</button>
                             <button type="button" v-if="tipoAccion==2" class="btn btn-primary" @click="actualizarArticulo()">Actualizar</button>
                         </div>

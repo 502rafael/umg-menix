@@ -31,8 +31,8 @@
                     </li>
 
                     
-                    {{-- <li class="nav-item nav-dropdown">
-                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-wallet"></i> Ventas y Ingresos</a>
+ <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-wallet"></i> Ingresos</a>
                         <ul class="nav-dropdown-items">
                             <li @click="menu=3" class="nav-item">
                                 <a class="nav-link" href="#"><i class="icon-wallet"></i> Ingresos</a>
@@ -41,7 +41,7 @@
                                 <a class="nav-link" href="#"><i class="icon-notebook"></i> Proveedores</a>
                             </li>
                         </ul>
-                    </li> --}}
+                    </li> 
                     {{-- <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-basket"></i> Venta</a>
                         <ul class="nav-dropdown-items">

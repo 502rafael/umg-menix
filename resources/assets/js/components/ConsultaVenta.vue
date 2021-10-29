@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <div class="table-responsive">
-                            <table class="table table-bordered table-striped table-sm">
+                            <table class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th>Opciones</th>
@@ -116,7 +116,7 @@
                         </div>
                         <div class="form-group row border">
                             <div class="table-responsive col-md-12">
-                                <table class="table table-bordered table-striped table-sm">
+                                <table class="table table-striped">
                                     <thead>
                                         <tr>
                                             <th>Artículo</th>
@@ -164,7 +164,7 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <button type="button" @click="ocultarDetalle()" class="btn btn-secondary">Cerrar</button>
+                                <button type="button" @click="ocultarDetalle()" class="btn btn-danger">Cerrar</button>
                             </div>
                         </div>
                     </div>
