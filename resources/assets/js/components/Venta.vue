@@ -36,9 +36,9 @@
                                         <th>Opciones</th>
                                         <th>Usuario</th>
                                         <th>Cliente</th>
-                                        <!-- <th>Tipo Comprobante</th>
+                                        <th>Tipo Comprobante</th>
                                         <th>Serie Comprobante</th>
-                                        <th>Número Comprobante</th> -->
+                                        <th>Número Comprobante</th>
                                         <th>Fecha Hora</th>
                                         <th>Total</th>
                                         <th>Estado</th>
@@ -61,9 +61,9 @@
                                         </td>
                                         <td v-text="venta.usuario"></td>
                                         <td v-text="venta.nombre"></td>
-                                        <!-- <td v-text="venta.tipo_comprobante"></td>
+                                        <td v-text="venta.tipo_comprobante"></td>
                                         <td v-text="venta.serie_comprobante"></td>
-                                        <td v-text="venta.num_comprobante"></td> -->
+                                        <td v-text="venta.num_comprobante"></td>
                                         <td v-text="venta.fecha_hora"></td>
                                         <td v-text="venta.total"></td>
                                         <td v-text="venta.estado"></td>
@@ -201,7 +201,7 @@
                                             
 
                                         <tr style="background-color: #CEECF5;">
-                                            <td colspan="5" align="right"><strong>Total:</strong></td>
+                                            <td colspan="4" align="right"><strong>Total:</strong></td>
                                             <td>Q {{total=calcularTotal}}</td>
                                         </tr>
                                     </tbody>  
@@ -277,7 +277,7 @@
                                             </td>
 
                                         <tr style="background-color: #CEECF5;">
-                                            <td colspan="4" align="right"><strong>Total:</strong></td>
+                                            <td colspan="3" align="right"><strong>Total:</strong></td>
                                             <td>Q {{total}}</td>
                                         </tr>
                                     </tbody>  
