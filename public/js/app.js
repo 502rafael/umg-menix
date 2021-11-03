@@ -61716,7 +61716,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -62310,11 +62309,7 @@ var render = function() {
                             ]),
                             _vm._v(" "),
                             _c("option", { attrs: { value: "RUC" } }, [
-                              _vm._v("RUC")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "PASS" } }, [
-                              _vm._v("PASS")
+                              _vm._v("DPI")
                             ])
                           ]
                         )
