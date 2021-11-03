@@ -31,7 +31,7 @@
                         </li>
                         {{-- Ingresos --}}
                         <li @click="menu=3" class="nav-item">
-                             <a class="nav-link" href="#"><i class="icon-wallet"></i> Ingresos</a>
+                             <a class="nav-link" href="#"><i class="icon-wallet"></i> Ingresos stock</a>
                         </li>
                     </li>
                     {{-- <li class="nav-item nav-dropdown">
