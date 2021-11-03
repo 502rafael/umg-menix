@@ -60445,7 +60445,7 @@ var render = function() {
                               }
                             ],
                             staticClass: "form-control",
-                            attrs: { type: "text", placeholder: "000x" },
+                            attrs: { type: "text", placeholder: "000" },
                             domProps: { value: _vm.serie_comprobante },
                             on: {
                               input: function($event) {
@@ -60473,7 +60473,7 @@ var render = function() {
                               }
                             ],
                             staticClass: "form-control",
-                            attrs: { type: "text", placeholder: "000xx" },
+                            attrs: { type: "text", placeholder: "000" },
                             domProps: { value: _vm.num_comprobante },
                             on: {
                               input: function($event) {
@@ -62848,7 +62848,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -63456,16 +63455,12 @@ var render = function() {
                             }
                           },
                           [
-                            _c("option", { attrs: { value: "DNI" } }, [
+                            _c("option", { attrs: { value: "DPI" } }, [
                               _vm._v("DPI")
                             ]),
                             _vm._v(" "),
-                            _c("option", { attrs: { value: "RUC" } }, [
-                              _vm._v("RUC")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "PASS" } }, [
-                              _vm._v("PASS")
+                            _c("option", { attrs: { value: "NIT" } }, [
+                              _vm._v("NIT")
                             ])
                           ]
                         )
@@ -67066,7 +67061,7 @@ var render = function() {
                               }
                             ],
                             staticClass: "form-control",
-                            attrs: { type: "text", placeholder: "000x" },
+                            attrs: { type: "text", placeholder: "000" },
                             domProps: { value: _vm.serie_comprobante },
                             on: {
                               input: function($event) {
@@ -67094,7 +67089,7 @@ var render = function() {
                               }
                             ],
                             staticClass: "form-control",
-                            attrs: { type: "text", placeholder: "000xx" },
+                            attrs: { type: "text", placeholder: "000" },
                             domProps: { value: _vm.num_comprobante },
                             on: {
                               input: function($event) {

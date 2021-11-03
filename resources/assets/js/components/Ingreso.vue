@@ -116,13 +116,13 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Serie Comprobante</label>
-                                    <input type="text" class="form-control" v-model="serie_comprobante" placeholder="000x">
+                                    <input type="text" class="form-control" v-model="serie_comprobante" placeholder="000">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Número Comprobante(*)</label>
-                                    <input type="text" class="form-control" v-model="num_comprobante" placeholder="000xx">
+                                    <input type="text" class="form-control" v-model="num_comprobante" placeholder="000">
                                 </div>
                             </div>
                             <div class="col-md-12">

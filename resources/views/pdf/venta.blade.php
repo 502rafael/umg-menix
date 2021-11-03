@@ -120,7 +120,6 @@
             <div id="datos">
                 <p id="encabezado">
                     <b>Libreria Menix</b>
-                    {{-- <b>Libreria Menix</b><br>Arequipa, Perú<br>Telefono:(+51)999999999<br>Email: compartiendocodigos@gmail.com --}}
                 </p>
             </div>
             <div id="fact">
@@ -161,8 +160,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>{{$v->usuario}}</td>
-                            <td>{{$v->created_at}}</td>
+                            <th>{{$v->usuario}}</th>
+                            <th>{{$v->created_at}}</th>
                         </tr>
                     </tbody>
                 </table>
