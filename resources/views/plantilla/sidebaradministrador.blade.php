@@ -8,6 +8,15 @@
                     _____________________________________
                     </li>
                     <li class="nav-item nav-dropdown">
+
+                        {{-- Categorias --}}
+                        <li @click="menu=1" class="nav-item">
+                             <a class="nav-link" href="#"><i class="icon-bag"></i> Categorías</a>
+                        </li>
+                        {{-- Producto --}}
+                         <li @click="menu=2" class="nav-item">
+                            <a class="nav-link" href="#"><i class="icon-bag"></i> Productos</a>
+                        </li>
                         {{-- Ventas --}}
                         <li @click="menu=5" class="nav-item">
                             <a class="nav-link" href="#"><i class="icon-basket-loaded"></i> Realizar Venta</a>
@@ -16,21 +25,13 @@
                         <li @click="menu=6" class="nav-item">
                              <a class="nav-link" href="#"><i class="icon-notebook"></i> Clientes</a>
                         </li>
-                        {{-- Producto --}}
-                         <li @click="menu=2" class="nav-item">
-                            <a class="nav-link" href="#"><i class="icon-bag"></i> Productos</a>
-                        </li>
-                        {{-- Categorias --}}
-                        <li @click="menu=1" class="nav-item">
-                             <a class="nav-link" href="#"><i class="icon-bag"></i> Categorías</a>
+                        {{-- Proveedores --}}
+                        <li @click="menu=4" class="nav-item">
+                             <a class="nav-link" href="#"><i class="icon-notebook"></i> Proveedores</a>
                         </li>
                         {{-- Ingresos --}}
                         <li @click="menu=3" class="nav-item">
                              <a class="nav-link" href="#"><i class="icon-wallet"></i> Ingresos</a>
-                        </li>
-                        {{-- Proveedores --}}
-                        <li @click="menu=4" class="nav-item">
-                                <a class="nav-link" href="#"><i class="icon-notebook"></i> Proveedores</a>
                         </li>
                     </li>
                     {{-- <li class="nav-item nav-dropdown">
