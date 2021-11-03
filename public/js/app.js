@@ -58909,10 +58909,7 @@ var render = function() {
                             }
                           ],
                           staticClass: "form-control",
-                          attrs: {
-                            type: "text",
-                            placeholder: "Código de barras"
-                          },
+                          attrs: { type: "text", placeholder: "Código" },
                           domProps: { value: _vm.codigo },
                           on: {
                             input: function($event) {
@@ -64619,8 +64616,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -65351,20 +65346,12 @@ var render = function() {
                             }
                           },
                           [
-                            _c("option", { attrs: { value: "DNI" } }, [
-                              _vm._v("DNI")
+                            _c("option", { attrs: { value: "DPI" } }, [
+                              _vm._v("DPI")
                             ]),
                             _vm._v(" "),
-                            _c("option", { attrs: { value: "RUC" } }, [
-                              _vm._v("RUC")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "CEDULA" } }, [
-                              _vm._v("CEDULA")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "PASS" } }, [
-                              _vm._v("PASS")
+                            _c("option", { attrs: { value: "NIT" } }, [
+                              _vm._v("NIT")
                             ])
                           ]
                         )

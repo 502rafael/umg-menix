@@ -80,8 +80,6 @@
     </div>   
     </div>
     <footer class="app-footer">
-        {{-- <span><a href="https://www.compartiendocodigos.net/" target="_blank">CompartiendoCódigos</a> &copy; 2018-2019</span> --}}
-        <span class="ml-auto">Version 1.0</span>
     </footer>
     
     <!-- JavaScript Bundle with Popper -->
