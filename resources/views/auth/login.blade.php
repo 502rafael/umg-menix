@@ -4,7 +4,7 @@
 <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="card-group mb-0">
-          <div class="card p-4" style="background:#FF8101;">
+          <div class="card p-4" style="background:#A8F5F3;">
           <form class="form-horizontal was-validated" method="POST" action="{{ route('login')}}">
           {{ csrf_field() }}
               <div class="card-body text-center">
