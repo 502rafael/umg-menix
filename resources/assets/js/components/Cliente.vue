@@ -96,8 +96,7 @@
                                     <div class="col-md-9">
                                         <select v-model="tipo_documento" class="form-control">
                                             <option value="NIT">NIT</option>
-                                            <option value="RUC">RUC</option>
-                                            <option value="PASS">PASS</option>
+                                            <option value="RUC">DPI</option>
                                         </select>                                    
                                     </div>
                                 </div>
